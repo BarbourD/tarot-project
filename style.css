@@ -3,3 +3,28 @@
     background-size: cover;
     background-repeat: no-repeat;
 } */
+div {
+    display: flex;
+    flex-direction: column;
+}
+#past {
+    display: flex;
+    flex-flow: row, wrap;
+    padding: 10px;
+    margin: 10px;
+}
+
+#present {
+    display: flex;
+    flex-flow: row, wrap;
+    padding: 10px;
+    margin: 10px;
+
+}
+
+#future {
+    display: flex;
+    flex-flow: row, wrap;
+    padding: 10px;
+    margin: 10px;
+}
