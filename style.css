@@ -1,30 +1,72 @@
-/* body { */
-    /* background-image: url("images/mediumwood.jpg");
+body { 
+    background-image: url("images/mediumwood.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-} */
+    color: azure;
+    display: grid;
+    height: 100vh;
+    margin: 0;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* grid-template-rows: ; */
+
+}
+
+header {
+    text-align: center;
+    font-family: 'Cinzel Decorative', cursive;
+    margin: 1px, 0px, 1px, 0px;
+    color:azure;
+    grid-column: 1/3;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+h2 {
+    margin: 0;
+}
 div {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    position: relative;
+    
+    
 }
-#past {
+.past {
     display: flex;
     flex-flow: row, wrap;
-    padding: 10px;
-    margin: 10px;
+    padding: 100px;
+    margin: 1px;
+    text-align: left;
+    color: azure;
+    justify-content: center;
+    background-color: aqua;
+    
 }
 
-#present {
+.present {
     display: flex;
     flex-flow: row, wrap;
-    padding: 10px;
-    margin: 10px;
-
+    justify-content: center;
+    padding: 100px;
+    margin: 1px;
+    text-align: center;
+    color: azure;
+    grid-column: center;
+    background-color: blueviolet;
+    
 }
 
-#future {
+.future {
     display: flex;
     flex-flow: row, wrap;
-    padding: 10px;
-    margin: 10px;
+    padding: 100px;
+    margin: 1px;
+    text-align: right;
+    color: azure;
+    justify-content: center;
+    grid-column-end: auto;
+    background-color: red;
+    
 }
