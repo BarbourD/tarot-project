@@ -1,22 +1,36 @@
 body { 
-    background-image: url("images/mediumwood.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: azure;
     display: grid;
     height: 100vh;
-    margin: 0;
-    grid-template-columns: 1fr 1fr 1fr;
-    /* grid-template-rows: ; */
-
+    margin: 2px;
+    grid-auto-flow: row;
+    /* grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr; */
+    background-image: url("images/mediumwood.jpg");
+    background-size: cover;
+    color: azure;
 }
 
+main {
+    display: grid;
+    justify-content: space-evenly;
+    padding: 10px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    grid-column: 1/4;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr;
+}
+
+
 header {
-    text-align: center;
+    display: grid;
+    grid-column: 1/4;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
     font-family: 'Cinzel Decorative', cursive;
-    margin: 1px, 0px, 1px, 0px;
-    color:azure;
-    grid-column: 1/3;
+    color:azure;  
 }
 
 h1 {
@@ -26,47 +40,78 @@ h1 {
 h2 {
     margin: 0;
 }
-div {
+button {
+    background-color: brown;
+}
+/* div {
+    display: grid;
+    grid-auto-flow: row;
     display: flex;
-    flex-direction: row;
-    position: relative;
-    
+    flex-direction: row;  
+    display: inline-block;
+} */
+.container {
+    display: flex;
+    justify-content: space-evenly;
     
 }
 .past {
-    display: flex;
-    flex-flow: row, wrap;
-    padding: 100px;
-    margin: 1px;
-    text-align: left;
-    color: azure;
+    display: grid;
+    grid-column: 1 / span 1;
+    display: flex; 
+    flex-flow: row, wrap; 
+    padding: 20px;
+    margin: 1px 20px 1px 20px;
+    text-align: center;
+    color: azure; 
     justify-content: center;
     background-color: aqua;
-    
-}
+    display: inline-block;
+} 
 
-.present {
+ .present {
+    display: grid;
+    grid-column: 2 / span 1;
     display: flex;
     flex-flow: row, wrap;
-    justify-content: center;
-    padding: 100px;
-    margin: 1px;
+    justify-content: center; 
+    padding: 20px;
+    margin: 1px 20px 1px 20px;
     text-align: center;
     color: azure;
-    grid-column: center;
     background-color: blueviolet;
-    
+    /* display: inline-block; */
 }
 
 .future {
+    display: grid;
+    grid-column: 3 / span 1;
     display: flex;
     flex-flow: row, wrap;
-    padding: 100px;
-    margin: 1px;
-    text-align: right;
+    padding: 20px;
+    margin: 1px 20px 1px 20px;
+    text-align: center;
     color: azure;
     justify-content: center;
-    grid-column-end: auto;
     background-color: red;
-    
+    /* display: inline-block; */
 }
+
+.flex-ctr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}  
+
+.item1 {
+    grid-area: 1;
+}
+
+.item2 {
+    grid-area: 2;
+}
+
+.item3 {
+    grid-area: 3;
+}
+

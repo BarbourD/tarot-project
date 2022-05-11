@@ -42,7 +42,6 @@ function showDeck() {
     console.log(firstCard.name_short)
     console.log(secondCard.name_short)
     console.log(thirdCard.name_short)
-  
 
   displayFirst(firstCard.meaning_up)
   displaySecond(secondCard.meaning_up)
@@ -54,8 +53,8 @@ function showDeck() {
     
 //functions to display meaning of first random card.
 function displayFirst(firstCard) {
-  const $cardPast = $('<div>')
-  $cardPast.addClass('past')
+  const $cardPast = $('<span>')
+  $cardPast.addClass('past flex-ctr item1')
   $cardPast.text(firstCard)
   $mainContent.append($cardPast)
 }
@@ -66,15 +65,15 @@ function displayFirst(firstCard) {
 //   $mainContent.append($imagePast)}
 
 function displaySecond(secondCard) {
-  const $cardPresent = $('<div>')
-  $cardPresent.addClass('present')
+  const $cardPresent = $('<span>')
+  $cardPresent.addClass('present flex-ctr item2')
   $cardPresent.text(secondCard)
   $mainContent.append($cardPresent)
 }
 
 function displayThird(thirdCard) {
-  const $cardFuture = $('<div>')
-  $cardFuture.addClass('future')
+  const $cardFuture = $('<span>')
+  $cardFuture.addClass('future flex-ctr item3')
   $cardFuture.text(thirdCard)
   $mainContent.append($cardFuture)
 }
