@@ -20,17 +20,17 @@ function showDeck() {
     {image: src="./images/cardimages/9 Hermit.png", name_short: 'ar09'},
     {image: src="./images/cardimages/10 The Wheel.png", name_short: 'ar10'},
     {image: src="./images/cardimages/11 Justice.png", name_short: 'ar11'},
-    {image: src="./images/cardimages/11 The_Hanged_man.png", name_short: 'ar12'},
-    {image: src="./images/cardimages/11 13_Death.png", name_short: 'ar13'},
-    {image: src="./images/cardimages/11 14_Temperance.png", name_short: 'ar14'},
-    {image: src="./images/cardimages/11 15_The_Devil.png", name_short: 'ar15'},
-    {image: src="./images/cardimages/11 16_The_Tower.png", name_short: 'ar16'},
-    {image: src="./images/cardimages/11 17_The_Star.png", name_short: 'ar17'},
-    {image: src="./images/cardimages/11 18_The_Moon.png", name_short: 'ar18'},
-    {image: src="./images/cardimages/11 19_The_Sun.png.png", name_short: 'ar19'},
-    {image: src="./images/cardimages/11 20_Judgement.png", name_short: 'ar20'},
+    {image: src="./images/cardimages/12_The_Hanged_man.png", name_short: 'ar12'},
+    {image: src="./images/cardimages/13_Death.png", name_short: 'ar13'},
+    {image: src="./images/cardimages/14_Temperance.png", name_short: 'ar14'},
+    {image: src="./images/cardimages/15_The_Devil.png", name_short: 'ar15'},
+    {image: src="./images/cardimages/16_The_Tower.png", name_short: 'ar16'},
+    {image: src="./images/cardimages/17_The_Star.png", name_short: 'ar17'},
+    {image: src="./images/cardimages/18_The_Moon.png", name_short: 'ar18'},
+    {image: src="./images/cardimages/19_The_Sun.png", name_short: 'ar19'},
+    {image: src="./images/cardimages/20_Judgement.png", name_short: 'ar20'},
     {image: src="./images/cardimages/0-The-Fool.png", name_short: 'ar00'},
-    {image: src="./images/cardimages/11 21_The_World.png", name_short: 'ar21'},
+    {image: src="./images/cardimages/21_The_World.png", name_short: 'ar21'},
     {image: src="./images/cardimages/11 Justice.png", name_short: 'wapa'},
     {image: src="./images/cardimages/11 Justice.png", name_short: 'wakn'},
     {image: src="./images/cardimages/11 Justice.png", name_short: 'waqu'},
@@ -91,26 +91,27 @@ function showDeck() {
 
   $.ajax(deck).then(function (data) {
     let newArray = data.cards
-    console.log(newArray.length)
+    // console.log(newArray)
     for(let i = 0; i < newArray.length; i++ ) {
       newArray[i].image = cardArray[i].image
     }
-    console.log(newArray)
-    const firstCard = data.cards[0]
-    const secondCard = data.cards[1]
-    const thirdCard = data.cards[2]
-console.log(data)
-    console.log(firstCard.name_short)
-    console.log(secondCard.name_short)
-    console.log(thirdCard.name_short)
-    console.log(cardObject.ar00)
-  displayFirst(firstCard.meaning_up)
-  displaySecond(secondCard.meaning_up)
-  displayThird(thirdCard.meaning_up)
-// if (firstCard.name_short === cardObject) {
-//   console.log('hell yeah')
-// }
-  // displayFirstImage()
+    const randomIndex = Math.floor(Math.random() * newArray.length)
+    const randomIndex2 = Math.floor(Math.random() * newArray.length)
+    const randomIndex3 = Math.floor(Math.random() * newArray.length)
+    const firstCard = newArray[randomIndex]
+    // console.log([randomIndex])
+    const secondCard = newArray[randomIndex2]
+    // console.log(secondCard)
+    const thirdCard = newArray[randomIndex3]
+    // console.log(thirdCard)
+// console.log(data)
+//     console.log(firstCard.name_short)
+//     console.log(secondCard.name_short)
+//     console.log(thirdCard.name_short)
+//     console.log(cardObject.ar00)
+  displayFirst(firstCard)
+  displaySecond(secondCard)
+  displayThird(thirdCard)
 })
 }
 
@@ -118,31 +119,32 @@ console.log(data)
     
 //functions to display meaning of first random card.
 function displayFirst(firstCard) {
-  // const $h2 = $('<h2>')
-  // $h2.text("Past")
-  // $mainContent.append($h2)
-  const $cardPast = $('<span>')
+  const $image = $('<img>')
+  $image.attr('src', firstCard.image)
+  $mainContent.append($image)
+  const $cardPast = $('<div>')
   $cardPast.addClass('past')
-  $cardPast.text(firstCard)
+  $cardPast.text(firstCard.meaning_up)
   $mainContent.append($cardPast)
 }
-// function displayFirstImage(firstCard) {
-//   const $imagePast = $('<div>')
-//   $imagePast.addClass('past')
-//   $imagePast.text(firstCard)
-//   $mainContent.append($imagePast)}
 
 function displaySecond(secondCard) {
-  const $cardPresent = $('<span>')
+  const $image2 = $('<img>')
+  $image2.attr('src', secondCard.image)
+  $mainContent.append($image2)
+  const $cardPresent = $('<div>')
   $cardPresent.addClass('present')
-  $cardPresent.text(secondCard)
+  $cardPresent.text(secondCard.meaning_up)
   $mainContent.append($cardPresent)
 }
 
 function displayThird(thirdCard) {
-  const $cardFuture = $('<span>')
+  const $image3 = $('<img>')
+  $image3.attr('src', thirdCard.image)
+  $mainContent.append($image3)
+  const $cardFuture = $('<div>')
   $cardFuture.addClass('future')
-  $cardFuture.text(thirdCard)
+  $cardFuture.text(thirdCard.meaning_up)
   $mainContent.append($cardFuture)
 }
 

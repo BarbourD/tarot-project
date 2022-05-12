@@ -3,7 +3,7 @@ body {
     margin: 2px;
     background-image: url("images/mediumwood.jpg");
     background-size: cover;
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */
     color: azure;
 }
 
@@ -11,7 +11,7 @@ main {
     display: flex;
     padding: 10px;
     margin: 0 auto;
-    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
 }
 
 header {
@@ -22,7 +22,7 @@ header {
     align-items: center;
     font-family: 'Cinzel Decorative', cursive;
     color:azure;  
-    margin-top: 10%;
+    margin-top: 10px;
 }
 
 h1 {
@@ -37,35 +37,30 @@ button {
 /* main {
 
 } */
-/* .past {
+.past {
     display: inline-block;
     width: 25%;
     height: 50%;
     padding: 20% 3% 30% 3%;
-    text-align: left;
-    background-image: url("images/cardBack4.png");
-    image-rendering: auto; 
-    background-size: cover; 
-} */
+    text-align: inherit;
+}
 
- /* .present { 
+ .present { 
     width: 25%;
     height: 50%;
     padding: 20% 3% 30% 3%;
-    text-align: left;
-    background-image:  url("images/cardBack3.png");
-    image-rendering: auto; 
-    background-size: cover; 
-}   */
+    text-align: inherit;
+}  
 
-/* .future { 
+.future { 
     display: inline-block;
     width: 25%;
     height: 50%;
     padding: 20% 3% 30% 3%;
-    text-align: left; 
-    background-image: url("images/cardBack5.png");
-    background-origin: padding-box;
-    image-rendering: auto; 
-    background-size: cover; 
-}   */
+    text-align: inherit;
+}  
+img {
+    width: 350px;
+    height: 500px;
+    vertical-align: top;
+}
