@@ -34,7 +34,10 @@ button {
     background-color: azure;
 }
 
-.past {
+/* main {
+
+} */
+/* .past {
     display: inline-block;
     width: 25%;
     height: 50%;
@@ -43,9 +46,9 @@ button {
     background-image: url("images/cardBack4.png");
     image-rendering: auto; 
     background-size: cover; 
-}
+} */
 
- .present { 
+ /* .present { 
     width: 25%;
     height: 50%;
     padding: 20% 3% 30% 3%;
@@ -53,9 +56,9 @@ button {
     background-image:  url("images/cardBack3.png");
     image-rendering: auto; 
     background-size: cover; 
-}  
+}   */
 
-.future { 
+/* .future { 
     display: inline-block;
     width: 25%;
     height: 50%;
@@ -65,4 +68,4 @@ button {
     background-origin: padding-box;
     image-rendering: auto; 
     background-size: cover; 
-}  
+}   */
