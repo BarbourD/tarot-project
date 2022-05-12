@@ -1,31 +1,26 @@
-<h1>Title</h1>
-<h2>Tarot Past / Present / Future</h2>
-
-</br>
+# Title:
+## Tarot Past / Present / Future</h2>
 
 
-<h1>Technologies Used:</h1>
-<ul>
-    <li>HTML5</li>
-    <li>CSS3</li>
-    <li>JavaScript</li>
-    <li>jQuery</li>
-    <li>Google Fonts</li>
-    <li>Tarot API</li>
-</ul> 
+# Technologies Used:
+* HTML5
+* CSS3
+* JavaScript
+* jQuery
+* Google Fonts
+*  Tarot API
 
-</br>
+# Screenshots:
+<img src="https://i.imgur.com/zqxNWgP.png">
+<img src="https://i.imgur.com/31Uc6oI.png">
 
-<h1>Screenshots:</h1>
-<img src="./images/start.png">
-<img src="./images/end.png">
+# Getting Started
+[Tarot Past / Present / Future](https://profound-entremet-2e58ba.netlify.app)
 
-</br>
+# Future Enhancements:
+* Change placement of card meaning text
 
-<h1>Getting Started</h1>
-<p><a href='https://profound-entremet-2e58ba.netlify.app'>
-</br>
-<h1>Future Enhancements:</h1>
-<ul>
-    <li>Adjust CSS to be more repsonsive</li>
-    <li>Add card images for each card</li>
+
+# Acknowledgements:
+* Tarot cards used with permission of Bennion Kearny. All rights reserved
+* Back ground Photo by Nathan Dumlao on Unsplash
