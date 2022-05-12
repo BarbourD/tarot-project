@@ -1,6 +1,5 @@
-# Title:
-## Tarot Past / Present / Future</h2>
-
+# **Tarot** *Past / Present / Future*
+#### This is an entertainment app used to tell you the influnces that have recently left your life, the energies guiding you at present, and the possible future outcomes.
 
 # Technologies Used:
 * HTML5
@@ -11,14 +10,17 @@
 *  Tarot API
 
 # Screenshots:
-<img src="https://i.imgur.com/zqxNWgP.png">
-<img src="https://i.imgur.com/31Uc6oI.png">
+![Alt text](https://i.imgur.com/zqxNWgP.png)
+
+![Alt text](https://i.imgur.com/31Uc6oI.png)
 
 # Getting Started
 [Tarot Past / Present / Future](https://profound-entremet-2e58ba.netlify.app)
 
 # Future Enhancements:
-* Change placement of card meaning text
+* Change placement of the "card meaning" text
+* Add the reverse card function
+* Add card descriptions 
 
 
 # Acknowledgements:
