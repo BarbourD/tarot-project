@@ -3,7 +3,7 @@ body {
     margin: 2px;
     background-image: url("images/mediumwood.jpg");
     background-size: cover;
-    /* background-repeat: no-repeat; */
+   
     color: azure;
 }
 
@@ -11,7 +11,8 @@ main {
     display: flex;
     padding: 10px;
     margin: 0 auto;
-    /* justify-content: space-evenly; */
+    justify-content: space-evenly;
+    
 }
 
 header {
