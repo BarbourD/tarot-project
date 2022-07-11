@@ -15,7 +15,7 @@
 ![Alt text](https://i.imgur.com/31Uc6oI.png)
 
 # Getting Started
-[Tarot Past / Present / Future](https://profound-entremet-2e58ba.netlify.app)
+[Tarot Past / Present / Future](https://tarot-past-present-future.netlify.app/)
 
 # Future Enhancements:
 * Change placement of the "card meaning" text
